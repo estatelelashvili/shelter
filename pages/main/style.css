@@ -35,10 +35,15 @@ html{
 	margin: 0 auto;
 }
 
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
 /* START SCREEN */
 
 .start_screen{
-	margin: 0.9rem 0 0 0.5rem;
+	margin: 0.9rem 0 0 0.15rem;
 
 }
 
@@ -54,7 +59,7 @@ header{
 }
 
 .logo > h1{
-	margin: 2.9rem 0 0 0;
+	margin: 2.9rem  0 0 0;
 	color: #F1CDB3;
 	font-family: 'Georgia';
 	font-style: normal;
@@ -74,7 +79,7 @@ header{
 }
 
 nav{
-	margin: 2.25rem 0 0 10.25rem ;
+	margin: 2.25rem 0 0 14.95rem ;
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -115,7 +120,7 @@ nav > ul > li > a:hover{
 }
 .start_screen_content > img{
 	margin-top: 2rem;
-	margin-right: 4.6rem;
+	/* margin-right: 4.6rem; */
 
 }
 
@@ -141,7 +146,7 @@ nav > ul > li > a:hover{
 	font-family: 'Arial';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	line-height: 160%;
 	color: #CDCDCD;
 }
@@ -192,7 +197,7 @@ nav > ul > li > a:hover{
 }
 
 .img_about_pets{
-	margin-left: 6.2rem;
+	margin-left: 5.92rem;
 	flex: 1;
 }
 
@@ -203,7 +208,8 @@ nav > ul > li > a:hover{
 }
 
 .about_cozy_house > h2{
-	margin-top: 1rem;
+	margin-top: 0.95rem;
+	margin-left: 1.85rem;
 	width: 60%;
 	font-family: 'Georgia';
 	font-style: normal;
@@ -215,8 +221,9 @@ nav > ul > li > a:hover{
 }
 
 .p1{
-	margin-top: 1.35rem;
-	width: 72%;
+	margin-top: 1.45rem;
+	margin-left: 1.85rem;
+	width: 78%;
 	font-family: 'Arial';
 	font-style: normal;
 	font-weight: 400;
@@ -225,8 +232,8 @@ nav > ul > li > a:hover{
 }
 
 .p2{
-	margin: 1.563rem 0 0 0;
-	width: 72%;
+	margin: 1.6rem 0 0 1.85rem;
+	width: 76%;
 	font-family: 'Arial';
 	font-style: normal;
 	font-weight: 400;
@@ -248,7 +255,7 @@ nav > ul > li > a:hover{
 	align-items: center;
 }
 .pets-wrapper > h2 {
-	margin: 6.05rem 4.25rem 0 0 ;
+	margin: 6.05rem 0 0 0.25rem;
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 400;
@@ -264,13 +271,15 @@ nav > ul > li > a:hover{
 	width: 100%;
 	display: flex;
 	align-items:center;
+	/* justify-content: center; */
+	justify-content: space-around;
 }
 
 .pets-arrow {
-	margin-top: 5.55rem;
-	margin-left:0.35rem;
+	margin-top: 5.5rem;
+	margin-left:0.07rem;
 	flex: 0.04;
-	width: 1.7rem;
+	width: 1.9rem;
 	height: 3.25em;
 	border: 0.15rem solid #F1CDB3;
 	border-radius: 100px;
@@ -285,7 +294,8 @@ nav > ul > li > a:hover{
 	transform: rotate(-180deg);
 }
 .arrowRight{
-	margin-right: 4.7rem;
+	/* margin-right: 4.7rem; */
+	margin-right: 0.1rem;
 }
 
 .pets-arrow:hover {
@@ -296,26 +306,27 @@ nav > ul > li > a:hover{
 
 .all-pets {
 	margin-top: 3.65rem;
-	flex: 0.96;
+	margin-left: 0.5rem;
+	flex: 0.95;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 #katrine{
-	margin-left: 3.4375rem;
+	margin-left: 2.85rem;
 }
 #katrine:hover{
 	opacity: 0.6;
 }
 
 #jennifer{
-	margin-right:0.15rem;
+	margin-left: 5.65rem;
 }
 #jennifer:hover{
 	opacity: 0.6;
 }
 #woody{
-	margin-right:3rem;
+	margin-left: 5.58rem;
 }
 #woody:hover{
 	opacity: 0.6;
@@ -372,7 +383,8 @@ nav > ul > li > a:hover{
 }
 
 .pets-button {
-	margin: 5.55rem 4.063rem 0 0;
+	/* margin: 5.55rem 4.063rem 0 0; */
+	margin: 5.55rem 0 0 0.1rem;
 	background-color: #F1CDB3;
 	width: 16.3125rem;
 	height: 3.25rem;
@@ -384,7 +396,6 @@ nav > ul > li > a:hover{
 	font-size: 1.063rem;
 	line-height: 130%;
 	letter-spacing: 0.06em;
-	color: var(--color-dark-3xl);
 	text-decoration: none;
 	cursor: pointer;
 	transition-duration: 0.5s;
@@ -407,7 +418,7 @@ nav > ul > li > a:hover{
 }
 
 #help > h2{
-	margin: 0 4rem 0 0;
+	margin: 0.2rem 0 0 0.25rem;
 	text-align: center;
 	font-family: 'Georgia';
 	font-style: normal;
@@ -419,7 +430,7 @@ nav > ul > li > a:hover{
 }
 
 .grid_wrapper{
-	margin: 3.65rem 3.625rem 3.625rem 0.75rem  ;
+	margin: 3.65rem 3.625rem 3.625rem 0.95rem  ;
 	display: grid;
 	justify-items: center;
 	grid-template-columns: repeat(20, 1fr);
@@ -433,51 +444,53 @@ nav > ul > li > a:hover{
 	grid-row: 1;
 }
 .trans{
-	margin-right: 0.75rem;
+	margin-left: 1.35rem;
 	grid-column: 5/span 4;
 	grid-row: 1;
 }
 .toys{
-	margin-left: 0.85rem;
+	margin-left: 4.85rem;
 	grid-column: 9/span 3;
 	grid-row: 1;
 }
 .bowls{
-	margin-right: 4.85rem;
+	margin-left: 1.45rem;
 	grid-column: 13/span 4;
 	grid-row: 1;
 }
 .shampoos{
-	margin-right: 4.2rem;
+	margin-left: 4.1rem;
 	grid-column: 17/span 4;
 	grid-row: 1;
 }
 
 .vitamins{
-	margin-right: 4.25rem;
+	margin-right: 3.25rem;
 	grid-column: 3/span 4;
 	grid-row: 2;
 }
 
 .medicines{
-	margin-right: 7.6rem;
+	margin-right: 4.45rem;
 	grid-column: 7/span 4;
 	grid-row: 2;
 }
 
 .collars{
-	margin-left: 1.35rem;
+	margin-left: 6.05rem;
 	grid-column: 10/span 4;
 	grid-row: 2;
 }
 
 .sleep{
-	margin-right: 2.2rem;
+	margin-left: 5rem;
 	grid-column: 15/span 4;
 	grid-row: 2;
 }
 
 .help-txt {
+	width: 10.938rem;
+	text-align: center;
 	margin: 1.9rem 0 0 0.25rem;
 	font-family: 'Georgia';
 	font-style: normal;
@@ -513,7 +526,7 @@ nav > ul > li > a:hover{
 .donation_content> img{
 	width: 31.563rem;
 	height: 16.313rem;
-	margin: 0.55rem  0 0 9.25rem;
+	margin: 0.65rem  0 0 8.9rem;
 }
 
 .donation_inner_content  >  h2{
@@ -611,7 +624,7 @@ footer{
 	display: flex;
 }
 .questions{
-	margin: 3.563rem 0 0 0.373rem;
+	margin: 3.563rem 0 0 2.5rem;
 	flex: 1;
 }
 
@@ -655,7 +668,7 @@ margin-top: 2.2rem;
 } */
 
 .visit-us{
-	margin: 3.563rem 0 0 3.95rem;
+	margin: 3.563rem 0 0 6.15rem;
 	/* margin: 5.25rem 0 0 3.95rem; */
 	flex:1;
 }
@@ -675,7 +688,7 @@ margin-top: 2.2rem;
 
 .footer-dog{
 	flex:1;
-	margin: 2.5rem 0 0 5.438rem;
+	margin: 2.5rem 0 0 7.5rem;
 }
 
 .footer-h2{
@@ -687,3 +700,4 @@ margin-top: 2.2rem;
 	letter-spacing: 0.06em;
 	color: #FFFFFF;
 }
+
