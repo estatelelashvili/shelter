@@ -15,229 +15,231 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="start_screen">
-        <header>
-          <div class="logo" id="logo">
-            <h1>Cozy House</h1>
-            <h4>Shelter for pets in Boston</h4>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a class="about_us_highLighted" href="./index.html"
-                  >About the shelter</a
-                >
-              </li>
-              <li><a href="../pets/index.html">Our pets</a></li>
-              <li><a href="#help">Help the shelter</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="start_screen_content">
-          <div class="screen_heading">
-            <h2>Not only people need a house</h2>
-            <p>
-              We offer to give a chance to a little and nice puppy with an
-              extremely wide and open heart. He or she will love you more than
-              anybody else in the world, you will see!
-            </p>
-            <button
-              id="makeFriendsBTN"
-              class="aBtn"
-              type="button"
-              onclick="smoothScroll(document.getElementById('pets'))"
-            >
-              Make a friend
-            </button>
-          </div>
-          <img
-            class="start_puppy"
-            src="../../assets/images/start-screen-puppy.png"
-            alt="hello_puppy"
-          />
-        </div>
-      </div>
-      <main>
-        <section class="about">
-          <div class="about_content">
-            <div class="img_about_pets">
-              <img src="../../assets/images/about-pets.png" alt="cute-pets" />
+      <div class="wrapper">
+        <div class="start_screen">
+          <header>
+            <div class="logo" id="logo">
+              <h1>Cozy House</h1>
+              <h4>Shelter for pets in Boston</h4>
             </div>
-            <div class="about_cozy_house">
-              <h2>About the shelter “Cozy House”</h2>
-              <p class="p1">
-                Currently we have 121 dogs and 342 cats on our hands and
-                statistics show that only 20% of them will find a family. The
-                others will continue to live with us and will be waiting for a
-                lucky chance to become dearly loved.
-              </p>
-              <p class="p2">
-                We feed our wards with the best food and make sure that they do
-                not get sick, feel comfortable (including psychologically) and
-                well. We are supported by 87 volunteers and 28 employees of
-                various skill levels. About 12% of the animals are taken by the
-                shelter staff. Taking care of the animals, they become attached
-                to the pets and would hardly ever leave them alone.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="pets" id="pets">
-          <div class="pets-wrapper">
-            <h2>Our friends who <br />are looking for a house</h2>
-            <div class="pets-slider">
-              <button type="button" class="pets-arrow arrowLeft"></button>
-              <div class="all-pets">
-                <div
-                  class="pets-card"
-                  id="katrine"
-                  onmouseover="chbg('katrine_learn','#F1CDB3')"
-                  onmouseout="chbg('katrine_learn','#F6F6F6')"
-                >
-                  <img
-                    src="../../assets/images/pets-katrine.png"
-                    alt="katrine-kitty"
-                  />
-                  <p class="pets-name">Katrine</p>
-                  <button class="btn_learn_more" id="katrine_learn">
-                    Learn more
-                  </button>
-                </div>
-                <div
-                  class="pets-card jennifer"
-                  id="jennifer"
-                  onmouseover="chbg('jennifer_learn','#F1CDB3', 'silver')"
-                  onmouseout="chbg('jennifer_learn','#F6F6F6', '#F6F6F6' )"
-                >
-                  <img
-                    src="../../assets/images/pets-jennifer.png"
-                    alt="jennifer-puppy"
-                  />
-                  <p class="pets-name">Jennifer</p>
-                  <button class="btn_learn_more" id="jennifer_learn">
-                    Learn more
-                  </button>
-                </div>
-                <div
-                  class="pets-card woody"
-                  id="woody"
-                  onmouseover="chbg('woody_learn','#F1CDB3', 'silver')"
-                  onmouseout="chbg('woody_learn','#F6F6F6', '#F6F6F6' )"
-                >
-                  <img
-                    src="../../assets/images/pets-woody.png"
-                    alt="woody-doggy"
-                  />
-                  <p class="pets-name">Woody</p>
-                  <button class="btn_learn_more" id="woody_learn">
-                    Learn more
-                  </button>
-                </div>
-              </div>
-              <button type="button" class="pets-arrow arrowRight"></button>
-            </div>
-            <button id="restKnowBTN" type="button" class="pets-button">
-              Get to know the rest
-            </button>
-          </div>
-        </section>
-
-        <section id="help">
-          <h2>How you can help <br />our shelter</h2>
-          <div class="grid_wrapper">
-            <div class="center-txt food">
-              <img
-                src="../../assets/icons/icon-pet-food.svg"
-                alt="yummy_food"
-              />
-              <p class="help-txt">Pet food</p>
-            </div>
-            <div class="center-txt trans">
-              <img
-                src="../../assets/icons/icon-transportation.svg"
-                alt="transportation_truck"
-              />
-              <p class="help-txt">Transportation</p>
-            </div>
-            <div class="center-txt toys">
-              <img src="../../assets/icons/icon-toys.svg" alt="toys_joys" />
-              <p class="help-txt">Toys</p>
-            </div>
-            <div class="center-txt bowls">
-              <img
-                src="../../assets/icons/icon-bowls-and-cups.svg"
-                alt="eat_bowls_drink_cups"
-              />
-              <p class="help-txt">Bowls and cups</p>
-            </div>
-            <div class="center-txt shampoos">
-              <img
-                src="../../assets/icons/icon-shampoos.svg"
-                alt="wash_with_shampoos"
-              />
-              <p class="help-txt">Shampoos</p>
-            </div>
-            <div class="center-txt vitamins">
-              <img
-                src="../../assets/icons/icon-vitamins.svg"
-                alt="vitamins_healthy"
-              />
-              <p class="help-txt">Vitamins</p>
-            </div>
-            <div class="center-txt medicines">
-              <img
-                src="../../assets/icons/icon-medicines.svg"
-                alt="shot_scary_medicine"
-              />
-              <p class="help-txt">Medicines</p>
-            </div>
-            <div class="center-txt collars">
-              <img
-                src="../../assets/icons/icon-collars-leashes.svg"
-                alt="freedom_or_leashes"
-              />
-              <p class="help-txt">Collars / leashes</p>
-            </div>
-            <div class="center-txt sleep">
-              <img
-                src="../../assets/icons/icon-sleeping-area.svg"
-                alt="sweet_dreems"
-              />
-              <p class="help-txt">Sleeping areas</p>
-            </div>
-          </div>
-        </section>
-        <section id="donation">
-          <div class="donation_content">
-            <img
-              src="../../assets/images/donation-dog.png"
-              alt="charity_doggy"
-            />
-            <div class="donation_inner_content">
-              <h2>You can also <br />make a donation</h2>
-              <h5>Name of the bank / Type of bank account</h5>
-              <form class="credit_card" id="fakeDoggyBankLink">
-                <img
-                  src="../../assets/icons/credit-card.svg"
-                  alt="show_me_money"
-                />
-                <button onclick="window.location.href='#fakeDoggyBankLink';">
-                  8380 2880 8028 8791 7435
-                </button>
-              </form>
+            <nav>
+              <ul>
+                <li>
+                  <a class="about_us_highLighted" href="./index.html"
+                    >About the shelter</a
+                  >
+                </li>
+                <li><a href="../pets/index.html">Our pets</a></li>
+                <li><a href="#help">Help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="start_screen_content">
+            <div class="screen_heading">
+              <h2>Not only people need a house</h2>
               <p>
-                Legal information and lorem ipsum dolor sit amet, consectetur
-                <br />adipiscing elit. Maecenas a ipsum at libero sagittis
-                dignissim sed ac <br />diam. Praesent ultrices maximus tortor et
-                vulputate. Interdum et<br />
-                malesuada fames ac ante ipsum primis in faucibus.
+                We offer to give a chance to a little and nice puppy with an
+                extremely wide and open heart. He or she will love you more than
+                anybody else in the world, you will see!
               </p>
+              <button
+                id="makeFriendsBTN"
+                class="aBtn"
+                type="button"
+                onclick="smoothScroll(document.getElementById('pets'))"
+              >
+                Make a friend
+              </button>
             </div>
+            <img
+              class="start_puppy"
+              src="../../assets/images/start-screen-puppy.png"
+              alt="hello_puppy"
+            />
           </div>
-        </section>
-      </main>
+        </div>
+        <main>
+          <section class="about">
+            <div class="about_content">
+              <div class="img_about_pets">
+                <img src="../../assets/images/about-pets.png" alt="cute-pets" />
+              </div>
+              <div class="about_cozy_house">
+                <h2>About the shelter “Cozy House”</h2>
+                <p class="p1">
+                  Currently we have 121 dogs and 342 cats on our hands and
+                  statistics show that only 20% of them will find a family. The
+                  others will continue to live with us and will be waiting for a
+                  lucky chance to become dearly loved.
+                </p>
+                <p class="p2">
+                  We feed our wards with the best food and make sure that they
+                  do not get sick, feel comfortable (including psychologically)
+                  and well. We are supported by 87 volunteers and 28 employees
+                  of various skill levels. About 12% of the animals are taken by
+                  the shelter staff. Taking care of the animals, they become
+                  attached to the pets and would hardly ever leave them alone.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="pets" id="pets">
+            <div class="pets-wrapper">
+              <h2>Our friends who <br />are looking for a house</h2>
+              <div class="pets-slider">
+                <button type="button" class="pets-arrow arrowLeft"></button>
+                <div class="all-pets">
+                  <div
+                    class="pets-card"
+                    id="katrine"
+                    onmouseover="chbg('katrine_learn','#F1CDB3')"
+                    onmouseout="chbg('katrine_learn','#F6F6F6')"
+                  >
+                    <img
+                      src="../../assets/images/pets-katrine.png"
+                      alt="katrine-kitty"
+                    />
+                    <p class="pets-name">Katrine</p>
+                    <button class="btn_learn_more" id="katrine_learn">
+                      Learn more
+                    </button>
+                  </div>
+                  <div
+                    class="pets-card jennifer"
+                    id="jennifer"
+                    onmouseover="chbg('jennifer_learn','#F1CDB3', 'silver')"
+                    onmouseout="chbg('jennifer_learn','#F6F6F6', '#F6F6F6' )"
+                  >
+                    <img
+                      src="../../assets/images/pets-jennifer.png"
+                      alt="jennifer-puppy"
+                    />
+                    <p class="pets-name">Jennifer</p>
+                    <button class="btn_learn_more" id="jennifer_learn">
+                      Learn more
+                    </button>
+                  </div>
+                  <div
+                    class="pets-card woody"
+                    id="woody"
+                    onmouseover="chbg('woody_learn','#F1CDB3', 'silver')"
+                    onmouseout="chbg('woody_learn','#F6F6F6', '#F6F6F6' )"
+                  >
+                    <img
+                      src="../../assets/images/pets-woody.png"
+                      alt="woody-doggy"
+                    />
+                    <p class="pets-name">Woody</p>
+                    <button class="btn_learn_more" id="woody_learn">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+                <button type="button" class="pets-arrow arrowRight"></button>
+              </div>
+              <button id="restKnowBTN" type="button" class="pets-button">
+                Get to know the rest
+              </button>
+            </div>
+          </section>
+
+          <section id="help">
+            <h2>How you can help <br />our shelter</h2>
+            <div class="grid_wrapper">
+              <div class="center-txt food">
+                <img
+                  src="../../assets/icons/icon-pet-food.svg"
+                  alt="yummy_food"
+                />
+                <p class="help-txt">Pet food</p>
+              </div>
+              <div class="center-txt trans">
+                <img
+                  src="../../assets/icons/icon-transportation.svg"
+                  alt="transportation_truck"
+                />
+                <p class="help-txt">Transportation</p>
+              </div>
+              <div class="center-txt toys">
+                <img src="../../assets/icons/icon-toys.svg" alt="toys_joys" />
+                <p class="help-txt">Toys</p>
+              </div>
+              <div class="center-txt bowls">
+                <img
+                  src="../../assets/icons/icon-bowls-and-cups.svg"
+                  alt="eat_bowls_drink_cups"
+                />
+                <p class="help-txt">Bowls and cups</p>
+              </div>
+              <div class="center-txt shampoos">
+                <img
+                  src="../../assets/icons/icon-shampoos.svg"
+                  alt="wash_with_shampoos"
+                />
+                <p class="help-txt">Shampoos</p>
+              </div>
+              <div class="center-txt vitamins">
+                <img
+                  src="../../assets/icons/icon-vitamins.svg"
+                  alt="vitamins_healthy"
+                />
+                <p class="help-txt">Vitamins</p>
+              </div>
+              <div class="center-txt medicines">
+                <img
+                  src="../../assets/icons/icon-medicines.svg"
+                  alt="shot_scary_medicine"
+                />
+                <p class="help-txt">Medicines</p>
+              </div>
+              <div class="center-txt collars">
+                <img
+                  src="../../assets/icons/icon-collars-leashes.svg"
+                  alt="freedom_or_leashes"
+                />
+                <p class="help-txt">Collars / leashes</p>
+              </div>
+              <div class="center-txt sleep">
+                <img
+                  src="../../assets/icons/icon-sleeping-area.svg"
+                  alt="sweet_dreems"
+                />
+                <p class="help-txt">Sleeping areas</p>
+              </div>
+            </div>
+          </section>
+          <section id="donation">
+            <div class="donation_content">
+              <img
+                src="../../assets/images/donation-dog.png"
+                alt="charity_doggy"
+              />
+              <div class="donation_inner_content">
+                <h2>You can also <br />make a donation</h2>
+                <h5>Name of the bank / Type of bank account</h5>
+                <form class="credit_card" id="fakeDoggyBankLink">
+                  <img
+                    src="../../assets/icons/credit-card.svg"
+                    alt="show_me_money"
+                  />
+                  <button onclick="window.location.href='#fakeDoggyBankLink';">
+                    8380 2880 8028 8791 7435
+                  </button>
+                </form>
+                <p>
+                  Legal information and lorem ipsum dolor sit amet, consectetur
+                  <br />adipiscing elit. Maecenas a ipsum at libero sagittis
+                  dignissim sed ac <br />diam. Praesent ultrices maximus tortor
+                  et vulputate. Interdum et<br />
+                  malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
     <footer>
       <div class="footer-content" id="contacts">
@@ -298,3 +300,4 @@
     <script src="./scripts.js"></script>
   </body>
 </html>
+
