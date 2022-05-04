@@ -56,6 +56,8 @@ header{
 }
 .logo{
 	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 .logo > h1{
@@ -78,15 +80,16 @@ header{
 	letter-spacing: 0.1em;
 }
 
+
 nav{
-	margin: 2.25rem 0 0 14.95rem ;
-	flex: 1;
 	display: flex;
+	margin: 2.25rem 0 0 0;
 	align-items: center;
 }
 
 nav > ul{
 	display: flex;
+
 	list-style: none;
 }
 
@@ -102,7 +105,6 @@ nav > ul > li > a{
 
 nav > ul > li > a:hover{
 	transition-duration: 0.2s;
-	/* background-color: #545454; */
 	opacity: 0.7;
 	text-decoration: underline 3px solid #F1CDB3;
 	text-underline-offset: 0.35rem;
@@ -120,8 +122,6 @@ nav > ul > li > a:hover{
 }
 .start_screen_content > img{
 	margin-top: 2rem;
-	/* margin-right: 4.6rem; */
-
 }
 
 .screen_heading{
