@@ -26,7 +26,7 @@
 html{
 	scroll-behavior: smooth;
 	background-image: url("../../assets/images/start-screen-background.png");
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: 100% 908px;
 }
 
@@ -89,7 +89,6 @@ nav{
 
 nav > ul{
 	display: flex;
-
 	list-style: none;
 }
 
@@ -610,9 +609,8 @@ nav > ul > li > a:hover{
 
 footer{
 	margin: 100px 0 0 0;
-	background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) , #211F20;
 	background-image: url("../../assets/images/start-screen-background.png");
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: 100% ;
 }
 
@@ -646,30 +644,13 @@ footer{
 	margin-top: 2.4rem;
 }
 
-/* .mail > img{
-	margin: 0.1rem 0 5rem 0;
-}
-.mail > a{
-	margin: 2.65rem 0 0 0.6rem;
-	text-decoration: none;
-} */
-
 .phone{
 display: flex;
 margin-top: 2.2rem;
 }
 
-/* .phone > img{
-	margin: 2.5rem 0 0 0;
-}
-.phone > a{
-	text-decoration: none;
-	margin: 2.813rem 0 0 1.25rem;
-} */
-
 .visit-us{
 	margin: 3.563rem 0 0 6.15rem;
-	/* margin: 5.25rem 0 0 3.95rem; */
 	flex:1;
 }
 
