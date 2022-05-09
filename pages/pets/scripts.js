@@ -1,5 +1,5 @@
 document.getElementById("logo").onclick = function () {
-  location.href = "./index.html";
+  location.href = "../main/index.html";
 };
 
 document.getElementById("makeFriendsBTN").onclick = function () {
