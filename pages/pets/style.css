@@ -103,20 +103,19 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:hover{
-	text-decoration: underline 3px solid #F1CDB3;
-	text-underline-offset: 0.3rem;
-	color: darkgray;
+	cursor: pointer;
+	color: #292929;
 }
 
 
 .about_us_highLighted{
-    text-decoration: underline 3px solid #F1CDB3;
+   	color: #292929;
+    	text-decoration: underline 3px solid #F1CDB3;
 	text-underline-offset: 0.3rem;
 }
 
 main{
 	background-color:  #F6F6F6;
-	/* background: red; */
 	padding-bottom: 6.25rem;
 }
 /* Our Friends */
