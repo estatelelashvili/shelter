@@ -31,7 +31,6 @@ html{
 body{
 	overflow-x: hidden;
 }
-
 .main_container{
 	width: 1280px;
 	margin: 0 auto;
@@ -46,8 +45,6 @@ header{
 	background: #FFFFFF;
 	
 	display: flex;
-	/* padding-top: 0.1875rem;
-	padding-top: 0.6rem; */
 	margin-bottom: 1.6rem;
 }
 
@@ -109,8 +106,8 @@ nav > ul > li > a:hover{
 
 
 .about_us_highLighted{
-   	color: #292929;
-    	text-decoration: underline 3px solid #F1CDB3;
+	color: #292929;
+    text-decoration: underline 3px solid #F1CDB3;
 	text-underline-offset: 0.3rem;
 }
 
@@ -118,7 +115,10 @@ main{
 	background-color:  #F6F6F6;
 	padding-bottom: 6.25rem;
 }
+
+
 /* Our Friends */
+
 .all-pets-cont{
 	background: #f6f6f6;
 	text-align: center;
@@ -171,14 +171,14 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	cursor: pointer;
+	
 	background: #FAFAFA;
 	border-radius: 0.5625rem;
 }
 
 .our-firends-block:hover {
-	opacity: 0.5;
-	
+	background: #FFFFFF;
+	cursor: pointer;
 }
 
 .our-firends-name  {
@@ -271,28 +271,28 @@ main{
 }
 
 #katrine:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #jennifer:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #woody:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #sophia:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #timmy:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #charly:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #scarlett:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 #freddie:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 
