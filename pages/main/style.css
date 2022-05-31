@@ -89,10 +89,10 @@ header{
 }
 
 .burger-line{
-	height: 3px;
+	height: 2px;
 	background-color: #F1CDB3;
-	width: 35px;
-	margin-bottom: 7px;
+	width: 32px;
+	margin-bottom: 8px;
 }
 
 
@@ -806,13 +806,18 @@ margin-top: 2.2rem;
         margin-left: 20%;
 }
 }
+
+.two-btn-div{
+	display: none;
+}
 @media(max-width:320px) {
 
 
 	.start_screen{
 		margin-top: 0;
+		/* background-color: red; */
 		min-width: 320px;
-		max-width:320px;
+		max-width: 320px;
 		max-height: 822px;
 		min-height: 822px;
 	}
@@ -821,38 +826,120 @@ margin-top: 2.2rem;
 		margin-bottom: -5px;
 	}
 	.logo{
+		margin-top: -16px;
+		margin-left: -23px;
+		max-width: 250px;
 		/* margin-top: 0;
 		margin-left: 0;
 		margin: auto; */
 	}
 
+	.burger-menu{
+		margin-top: 49px;
+		margin-left: 6px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
 	.screen_heading > h2{
-		/* margin-top: 0; */
+		margin-top: 56px;
 		font-size: 25px;
 		width: 197px;
 		text-align: center;
+		letter-spacing: 1.5px;
 	}
 	.screen_heading > p{
 		font-size: 15px;
 		max-width: 300px;
 		min-width: 300px;
-		margin-left: -50px;
+		margin-left: -55px;
+		margin-top: 42px;
 		/* margin-right: auto; */
 		text-align: center;
 	}
 
 	.friendbtn{
-		margin-left: 0;
+		margin-left: -8px;
 		margin-right: auto;
 	}
 
 	.start_puppy{
+		
 		max-height: 271px;
 		max-width: 260px;
 		min-height: 271px;
 		min-width: 260px;
+		margin-top: 92px;
+		/* margin-left: 100px; */
+		/* border: 1px solid red; */
+		margin-left: 20px;
+		/* margin-left: auto;*/
+		/* margin-right: auto;  */
+
+	}
+
+	.about{
+		max-height: 975px;
+		min-height: 975px;
+	}
+	.about_content{
+		display: flex;
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+
+	.about_cozy_house > h2{
+		font-size: 25px;
+		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: -38px;
+		max-width: 270px;
+		min-width: 270px;
+	}
+	.about_cozy_house > .p1{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 270px;
+		min-width: 270px;
+		text-align: justify;
+	}
+	.about_cozy_house > .p2{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 270px;
+		min-width: 270px;
+		text-align: justify;
+	}
+
+	.img_about_pets > img{
+		max-width: 260px;
+		max-height: 353px;
+		min-width: 260px;
+		min-height: 353px;
+		margin-left: -90px;
+		margin-top: 40px;
+		/* align-self: center; */
+		/* margin-right: auto; */
+	}
+
+	#jennifer, #woody{
+		display: none;
+	}
+
+	.pets-wrapper > h2{
+		font-size: 25px;
+		margin-top: 42px;
+	}
+
+	#katrine{
+		margin-top: 35px;
+		margin-left: 0;
+	}
+
+	.two-btn-div{
+		display: block;
 	}
 
     .footer-dog, .visit-us, .donation_content, .charity-dog, .charity-img{

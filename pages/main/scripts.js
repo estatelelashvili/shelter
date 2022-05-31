@@ -25,3 +25,20 @@ function burgerFunction() {
     ham.style.visibility = "hidden";
   }
 }
+
+function addTwoBtn() {
+  // if (window.innerWidth < 321) {
+  let petSlider = document.getElementById("pets-slider-id");
+  let twoBtnDiv = document.createElement("div");
+
+  let leftA = document.createElement("img");
+  let leftB = document.createElement("img");
+
+  leftA.src = "../../assets/images/affect-arrow-left.png";
+  leftB.src = "../../assets/images/affect-button_arrow.png";
+  twoBtnDiv.append(leftA);
+  twoBtnDiv.append(leftB);
+  petSlider.append(twoBtnDiv);
+  alert("added");
+  // }
+}
