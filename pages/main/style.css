@@ -28,7 +28,7 @@ html{
 	background-image: url("../../assets/images/start-screen-background.png");
 	background-repeat: no-repeat;
 	background-size: 100% 908px;
-	
+	overflow-x: hidden;
 }
 
 .main-container{
