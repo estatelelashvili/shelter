@@ -22,50 +22,95 @@
 	box-sizing: border-box;
 }
 
+/*
+nav{
+	flex:1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 2.35rem 2.6em 0 0;
+	align-items: center;
+}
+
+
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    position:relative;
+}
+
+
+nav > ul > li > a{
+	margin: 0 0 0 2.25rem;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.938em;
+	color: #545454;
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+	cursor: pointer;
+	color: #292929;
+}
+
+
+.about_us_highLighted{
+	color: #292929;
+    text-decoration: underline 3px solid #F1CDB3;
+	text-underline-offset: 0.3rem;
+} */
+
 html{
 	scroll-behavior: smooth;
 	background: #FFFFFF;
-
 }
 
-.main_container{
-	width: 1280px;
-	margin: 0 auto;
-}
-
-.wrapper{
-	width: 1200px;
-	margin: 0 auto;
+.main-container{
+	max-width: 1280px;
+	margin: auto;
+	/* border: 1px solid yellowgreen; */
 }
 
 
+/* START SCREEN */
+
+.start_screen{
+	margin: 0.9rem 0 0 0.15rem;
+	background-image: url("../../assets/images/start-screen-background.png");
+	background-repeat: no-repeat;
+}
 
 header{
-	background: #FFFFFF;
 	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 1.6rem;
+	background: #FFFFFF;
+	flex-wrap:wrap;
 }
-
 #logo{
 	transition-duration: 0.5s;
 	cursor: pointer;
 }
-
 .logo{
 	flex: 1;
+	flex-direction: column;
+	width:100%;
+	display: inline-block;
 }
+
 .logo > h1{
-	margin: 1.85rem  0 0 0;
+	margin: 2.85rem  0 0 1em;
 	color: #545454;
 	font-family: 'Georgia';
 	font-style: normal;
 	font-weight: 400;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.05em;
+	
 }
 
 .logo > h4 {
-	margin:0.2rem 0 0 0.3em;
+	margin:0.17rem 0 0 2.6em;
 	font-family: 'Arial';
 	font-style: normal;
 	font-weight: 400;
@@ -88,8 +133,9 @@ header{
 	margin-bottom: 7px;
 }
 
+
+
 nav{
-	flex:1;
 	display: flex;
 	flex-direction: row;
 	margin: 2.35rem 2.6em 0 -7em;
@@ -112,16 +158,19 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:hover{
-	cursor: pointer;
-	color: #292929;
+	transition-duration: 0.2s;
+	opacity: 0.7;
+	text-decoration: underline 3px solid #F1CDB3;
+	text-underline-offset: 0.35rem;
 }
-
 
 .about_us_highLighted{
 	color: #292929;
     text-decoration: underline 3px solid #F1CDB3;
 	text-underline-offset: 0.3rem;
 }
+
+
 
 main{
 	background-color:  #F6F6F6;
@@ -163,21 +212,15 @@ main{
 	text-align: center;
 	
 }
-.main_container-friends{
-	width: 1280px;
-	margin: 0 auto;
-	background: #F6F6F6;
-}
-.our-firends {
-	width: 1200px;
-	margin: 0 auto;
-	
-}
+
 
 
 .our-firends-title {
 	margin: 5.05rem 0 0 0.15rem;
 	color: #545454;
+	display:block;
+	margin:auto;
+	width:90%;
 }
 
 .our-firends-title > h2{
@@ -189,6 +232,7 @@ main{
 	line-height: 130%;
 	letter-spacing: 0.06em;
 	color: #545454;
+	margin:auto;
 }
 
 
@@ -208,10 +252,12 @@ main{
 	display: block;
 	flex-direction: column;
 	align-items: center;
-	
 	background: #FAFAFA;
 	border-radius: 0.5625rem;
 }
+
+
+
 
 .our-firends-block:hover {
 	background: #FFFFFF;
