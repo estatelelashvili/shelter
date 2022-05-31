@@ -337,7 +337,7 @@ nav > ul > li > a:hover{
 	}
 
 }
-
+ 
 
 
 /* OUR FRIENDS */
@@ -940,15 +940,156 @@ margin-top: 2.2rem;
 
 	.two-btn-div{
 		display: block;
+		margin-top: 49px;
 	}
 
-    .footer-dog, .visit-us, .donation_content, .charity-dog, .charity-img{
+	.two-btn-one{
+		margin-left: 0;
+	}
+	.two-btn-two{
+		/* margin-left: 75px; */
+		margin-left: 75px;
+	}
+
+	.pets-name{
+		margin-top: 24px;
+	}
+
+	.pets-button{
+		margin-top: 38px;
+	}
+	.btn_learn_more{
+		margin-left: 42px;
+	}
+
+	#help{
+		max-height: 743px;
+		min-height: 743px;
+
+		margin-bottom: -220px
+	}
+	.help-title{
+		margin-top: -95px;
+		font-size: 25px;
+		line-height: 129%;
+		letter-spacing: 1.5px;
+	}
+
+	.grid_wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 320px;
+		min-width: 320px;
+		margin-left: 14px;
+	}
+
+
+	.center-txt > img{
+		max-width: 50px;
+		max-height: 50px;
+		min-width: 50px;
+		min-height: 50px;
+		margin-top: 20px;
+	}
+	.center-txt > p{
+		font-size: 15px;
+		line-height: 110%;
+		letter-spacing: 0.9px;
+		margin-top: 20px;
+	}
+
+	.toys{
+		margin-top: 12px;
+	}
+
+	.bowls{
+		margin-top: 12px;
+		margin-left: 2px;
+	}
+
+	.shampoos{
+		margin-top: 9px;
+		margin-left: 2px;
+	}
+
+	.vitamins{
+		margin-top: 10px;
+		margin-left: 2px;
+	}
+
+	.medicines{
+		margin-top: 10px;
+		margin-left: 2px;
+	}
+	.collars {
+		margin-top: 10px;
+		margin-left: 1px;
+	}
+	.collars > p{
+		max-width: 125px;
+		min-width: 125px;
+	}
+	.sleep{
+		margin-top: 11px;
+		margin-left: -155px;
+	}
+	.help-txt{
+		flex: 2;
+		flex-basis: 80%;
+		max-width: 120px;
+	}
+
+	#donation{
+		max-height: 542px;
+		min-height: 542px;
+		background-color: #F6F6F6;
+		margin-bottom: -102px;
+	}
+
+	.donation_inner_content > h2{
+		margin-top: 40px;
+		margin-left: 38px;
+	}
+
+	.donation_inner_content > h5{
+		margin-top: 23px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.credit_card{
+		margin-top: 22px;
+	}
+
+	.charity-dog{
+		margin-top: 42px;
+	}
+   .visit-us, .donation_content{
         margin-left: 0;
 		/* margin: 0 auto; */
 	}
-	.questions > .footer-h2, .visit-us > .footer-h2{
+	.footer-dog{
+		margin-top: 25px;
+		margin-left: 0;
+	}
+	.questions > .footer-h2{
+		font-size: 25px;
+		/* width: 100%; */
+		margin-top: -27px;
+		margin-left: -30px;
+		text-align: center;
+		/* max-width: 320px;
+		min-width: 320px; */
+	}
+
+	.visit-us > .footer-h2{
 		font-size: 25px;
 		text-align: center;
+		margin-top: -20px;
+		margin-left: 5px;
+		max-width: 250px;
+		min-width: 250px;
 	}
 	.footer-dog,.footer-dog > img{
 		/* border: 1px red solid; */
@@ -969,7 +1110,8 @@ margin-top: 2.2rem;
 		/* margin-left: auto;
 		margin-right: auto;
 		margin-top: auto; */
-		margin: auto;
+		/* margin: auto; */
+		margin-left: 15px;
 	}
 	.donation_inner_content > h2{
 		font-size: 25px;
@@ -986,10 +1128,12 @@ margin-top: 2.2rem;
 	}
 
 	footer{
+		max-height: 808px;
+		min-height: 808px;
 		max-width: 320px;
 		min-width: 320px;
-		margin-left: auto;
-		margin-right: auto;
+		/* margin-left: auto;
+		margin-right: auto; */
 	}
 	.donation_inner_content > p{
 		max-width: 280px;
@@ -1002,7 +1146,9 @@ margin-top: 2.2rem;
 		/* line-height: 150%; */
 		text-align: justify;
 	}
-
+	.footer-dog{
+		margin-left: 0;
+	}
 	.credit_card {
 		width: 280px;
 		margin-left:auto;
@@ -1016,7 +1162,7 @@ margin-top: 2.2rem;
 
 	html{
 		min-width: 320px;
-		margin: auto;
+		/* margin: auto; */
 	}
 }
 
