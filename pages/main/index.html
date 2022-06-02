@@ -76,30 +76,30 @@
     <main>
       <section class="about">
         <div class="main-container">
-          <div class="wrapper">
-            <div class="about_content">
-              <div class="img_about_pets">
-                <img src="../../assets/images/about-pets.png" alt="cute-pets" />
-              </div>
-              <div class="about_cozy_house">
-                <h2>About the shelter “Cozy House”</h2>
-                <p class="p1">
-                  Currently we have 121 dogs and 342 cats on our hands and
-                  statistics show that only 20% of them will find a family. The
-                  others will continue to live with us and will be waiting for a
-                  lucky chance to become dearly loved.
-                </p>
-                <p class="p2">
-                  We feed our wards with the best food and make sure that they
-                  do not get sick, feel comfortable (including psychologically)
-                  and well. We are supported by 87 volunteers and 28 employees
-                  of various skill levels. About 12% of the animals are taken by
-                  the shelter staff. Taking care of the animals, they become
-                  attached to the pets and would hardly ever leave them alone.
-                </p>
-              </div>
+          <!-- <div class="wrapper"> -->
+          <div class="about_content">
+            <div class="img_about_pets">
+              <img src="../../assets/images/about-pets.png" alt="cute-pets" />
+            </div>
+            <div class="about_cozy_house">
+              <h2>About the shelter “Cozy House”</h2>
+              <p class="p1">
+                Currently we have 121 dogs and 342 cats on our hands and
+                statistics show that only 20% of them will find a family. The
+                others will continue to live with us and will be waiting for a
+                lucky chance to become dearly loved.
+              </p>
+              <p class="p2">
+                We feed our wards with the best food and make sure that they do
+                not get sick, feel comfortable (including psychologically) and
+                well. We are supported by 87 volunteers and 28 employees of
+                various skill levels. About 12% of the animals are taken by the
+                shelter staff. Taking care of the animals, they become attached
+                to the pets and would hardly ever leave them alone.
+              </p>
             </div>
           </div>
+          <!-- </div> -->
         </div>
       </section>
 
@@ -180,7 +180,7 @@
                 Get to know the rest
               </button> -->
 
-              <button id id="restKnowBtn" type="button" class="pets-button">
+              <button id="restKnowBtn" class="pets-button">
                 Get to know the rest
               </button>
             </div>
@@ -394,7 +394,7 @@
       //  mql.addEventListener('change', render);
 
       hamburger.addEventListener("click", () => {
-        if ((hamburger.style.display = "block")) {
+        if (hamburger.style.display === "block") {
           if (clicked === false) {
             first.style.display = "block";
             second.style.display = "block";
@@ -410,40 +410,37 @@
           }
         }
       });
-      // window.onload = function () {
-      //   let petSlider = document.getElementById("pets-slider-id");
-      //   let wood = document.getElementById("woody");
-      //   let twoBtnDiv = document.createElement("div");
-      //   twoBtnDiv.style.display = "none";
 
-      //   let leftA = document.createElement("img");
-      //   let leftB = document.createElement("img");
+      window.onresize = function () {
+        location.reload();
+      };
 
-      //   leftA.src = "../../assets/images/affect-arrow-left.png";
-      //   leftB.src = "../../assets/images/affect-button_arrow.png";
-      //   twoBtnDiv.append(leftA);
-      //   twoBtnDiv.append(leftB);
-      //   petSlider.append(twoBtnDiv);
-      //   alert("added");
+      document.getElementById("makeFriendsBTN").onclick = function () {
+        location.href = "#pets";
+      };
+      // document.getElementById("restKnowBTN").onclick = function () {
+      //   location.href = "../pets/index.html";
       // };
-      // // window.addEventListener("resize", addTwoBtn());
+      document.getElementById("logo").onclick = function () {
+        location.href = "index.html";
+      };
 
-      // function addTwoBtn(ev) {
-      //   if (window.innerWidth < 321) {
-      //     let petSlider = document.getElementById("pets-slider-id");
-      //     let twoBtnDiv = document.createElement("div");
+      function chbg(target, color) {
+        document.getElementById(target).style.backgroundColor = color;
+      }
 
-      //     let leftA = document.createElement("img");
-      //     let leftB = document.createElement("img");
+      function burgerFunction() {
+        let nav = document.getElementById("navy");
 
-      //     leftA.src = "../../assets/images/affect-arrow-left.png";
-      //     leftB.src = "../../assets/images/affect-button_arrow.png";
-      //     twoBtnDiv.append(leftA);
-      //     twoBtnDiv.append(leftB);
-      //     petSlider.append(twoBtnDiv);
-      //     alert("added");
-      //   }
-      // }
+        let ham = document.getElementById("hamburger");
+        if (window.innerWidth < 769) {
+          nav.style.visibility = "hidden";
+          ham.style.visibility = "visible";
+        } else {
+          nav.style.visibility = "visible";
+          ham.style.visibility = "hidden";
+        }
+      }
     </script>
   </body>
 </html>

@@ -29,6 +29,12 @@ html{
 	background-repeat: no-repeat;
 	background-size: 100% 908px;
 	overflow-x: hidden;
+	
+}
+
+
+body.scrollblock {
+    overflow: hidden;
 }
 
 .main-container{
@@ -811,27 +817,35 @@ margin-top: 2.2rem;
 	display: none;
 }
 @media(max-width:320px) {
-
-
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	background-image: url("../../assets/images/start-screen-background.png");
+	background-repeat: no-repeat;
+	background-size: 320px 822px;
+	overflow-x: hidden;
+	
+}
 	.start_screen{
 		margin-top: 0;
-		/* background-color: red; */
+		
 		min-width: 320px;
 		max-width: 320px;
 		max-height: 822px;
 		min-height: 822px;
+		/* border: 1px solid red; */
+		min-width: 320px;
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.start_puppy{
-		margin-bottom: -5px;
-	}
 	.logo{
 		margin-top: -16px;
 		margin-left: -23px;
 		max-width: 250px;
-		/* margin-top: 0;
-		margin-left: 0;
-		margin: auto; */
 	}
 
 	.burger-menu{
@@ -880,10 +894,19 @@ margin-top: 2.2rem;
 	}
 
 	.about{
-		max-height: 975px;
-		min-height: 975px;
+		margin-top:22px;
+		min-width: 320px;
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 953px;
+		min-height: 953px;
+		/* border: 1px solid green; */
+		/* border: 1px solid red; */
 	}
 	.about_content{
+		/* margin-left: 0; */
+		margin: auto;
 		display: flex;
 		flex-direction: column-reverse;
 		align-content: center;
@@ -894,25 +917,34 @@ margin-top: 2.2rem;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: -38px;
+		margin-top: -18px;
 		max-width: 270px;
 		min-width: 270px;
 	}
 	.about_cozy_house > .p1{
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 0;
+		/* margin-right: auto; */
 		max-width: 270px;
 		min-width: 270px;
 		text-align: justify;
 	}
 	.about_cozy_house > .p2{
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 0;
+		/* margin-right: auto; */
 		max-width: 270px;
 		min-width: 270px;
 		text-align: justify;
 	}
 
+	#pets{
+		max-width: 320px;
+		min-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 790px;
+		min-height: 790px;
+		/* border: 1px solid red; */
+	}
 	.img_about_pets > img{
 		max-width: 260px;
 		max-height: 353px;
@@ -963,13 +995,24 @@ margin-top: 2.2rem;
 	}
 
 	#help{
-		max-height: 743px;
-		min-height: 743px;
+		margin-top: 0;
+		max-height: 674px;
+		min-height: 674px;
+		/* border: 1px solid red; */
+		min-width: 320px;
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		/* margin: auto; */
+		/* margin-left: 15px; */
+		/* border: solid red 1px; */
 
-		margin-bottom: -220px
 	}
+
 	.help-title{
-		margin-top: -95px;
+		margin-left: 0;
+		margin-top: 42px;
+		/* margin-top: 0; */
 		font-size: 25px;
 		line-height: 129%;
 		letter-spacing: 1.5px;
@@ -980,7 +1023,8 @@ margin-top: 2.2rem;
 		flex-wrap: wrap;
 		max-width: 320px;
 		min-width: 320px;
-		margin-left: 14px;
+		margin: auto;
+
 	}
 
 
@@ -990,12 +1034,14 @@ margin-top: 2.2rem;
 		min-width: 50px;
 		min-height: 50px;
 		margin-top: 20px;
+		margin-left: 30px;
 	}
 	.center-txt > p{
 		font-size: 15px;
 		line-height: 110%;
 		letter-spacing: 0.9px;
 		margin-top: 20px;
+		/* margin-left: 4px; */
 	}
 
 	.toys{
@@ -1040,14 +1086,14 @@ margin-top: 2.2rem;
 	}
 
 	#donation{
-		max-height: 542px;
-		min-height: 542px;
+		margin-top: 0;
+		max-height: 570px;
+		min-height: 570px;
 		background-color: #F6F6F6;
-		margin-bottom: -102px;
 	}
 
 	.donation_inner_content > h2{
-		margin-top: 40px;
+		margin-top: 42px;
 		margin-left: 38px;
 	}
 
@@ -1128,8 +1174,9 @@ margin-top: 2.2rem;
 	}
 
 	footer{
-		max-height: 808px;
-		min-height: 808px;
+		margin-top: -28px;
+		max-height: 809px;
+		min-height: 809px;
 		max-width: 320px;
 		min-width: 320px;
 		/* margin-left: auto;
@@ -1160,10 +1207,32 @@ margin-top: 2.2rem;
 		width: 210px;
 	}
 
-	html{
-		min-width: 320px;
-		/* margin: auto; */
+	html, body{
+		max-width: 320px;
+		margin: auto;
+		/* border: 1px solid red; */
 	}
+
+	
+.main-container{
+	max-width: 320px;
+	margin: auto;
+	/* border: 1px solid red; */
+}
+
+/* quickfix */
+
+.about, #help, .pets, #donation, footer {
+	/* border: 1px solid red; */
+}
+
+
+
+/* .start_screen, #help, .about, #donation, .pets, footer{
+	display: none;
+} */
+
+
 }
 
 
