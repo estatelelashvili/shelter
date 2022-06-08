@@ -428,7 +428,7 @@ nav > ul > li > a:hover{
         margin-left:8%;
         margin-right:7%;
         flex:1;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 		overflow: hidden;
 		width: 978px;
 }
@@ -438,7 +438,7 @@ nav > ul > li > a:hover{
 	width: fit-content;
 	max-height: 425px;
 	margin-left: -630px;
-	margin-left: 30px;
+	margin-left: 50px;
 }
 
 
@@ -478,9 +478,86 @@ nav > ul > li > a:hover{
 	margin-right: 50px;
 	cursor: pointer;
 	align-items: center;
-	border: 1px solid red;
+	/* border: 1px solid red; */
+
+
 	
 }
+
+.pets{
+	position: relative;
+}
+.pets-card-child {
+	visibility: hidden;
+	/* display: none; */
+	/* flex-direction: column; */
+	/* margin-right: 50px; */
+	background-color: #B2B2B2;
+	/* background: transparent; */
+	top: 20%;
+	left: 15%;
+	width: 952px;
+	height: 552px;
+	/* align-items: center; */
+	/* border: 1px solid red; */
+	border-radius: 5px;
+	position: absolute;
+	
+}
+.pop-close-btn{
+	position: absolute;
+	left: 94%;
+	width: 52px;
+	height: 52px;
+	border: 2px solid #F1CDB3;
+	text-align: center;
+	padding: 11px;
+	font-size: 20px;
+	font-family:monospace;
+	font-weight: bolder;
+	font-weight: bold;
+	border-radius: 50px;
+	cursor: pointer;
+
+
+}
+.pets-pop-up{
+	display: flex;
+	width: 900px;
+	height: 500px;
+	background: #FFFFFF;
+	margin-top: 52px;
+	border-radius: 5px;
+	z-index: 7;
+}
+
+.pop-up-ul{
+	list-style: none;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: #000000;
+}
+
+.pop-up-ul li::before {
+	content: "•";
+	color:  #F1CDB3;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	/* margin-left: -1em; */
+  }
+
+  .pop-list-item{
+	font-weight: normal;
+  }
+
+  .pop-up-info{
+	  display: flex;
+  }
 
 .pets-name  {
 	display: flex;
