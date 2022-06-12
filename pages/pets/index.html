@@ -15,13 +15,10 @@
   </head>
   <body>
     <div class="main_container">
-      
       <header>
         <div class="logo" id="logo">
           <h1>Cozy House</h1>
           <h4>Shelter for pets in Boston</h4>
-
-          
         </div>
         <div class="burger-menu" id="hamburger">
           <div class="burger-line"></div>
@@ -32,22 +29,26 @@
         <nav id="navy">
           <ul>
             <li>
-              <a  href="./index.html" 
-                >About the shelter</a
+              <a href="./index.html">About the shelter</a>
+            </li>
+            <li>
+              <a href="../pets/index.html" class="about_us_highLighted"
+                >Our pets</a
               >
             </li>
-            <li><a href="../pets/index.html" class="about_us_highLighted">Our pets</a></li>
             <li><a href="#help" class="third">Help the shelter</a></li>
             <li><a href="#contacts" class="forth">Contacts</a></li>
           </ul>
         </nav>
-        
       </header>
-      
     </div>
     <main>
       <div class="main_container-friends all-pets-cont">
         <section class="our-firends" id="our-firends">
+          <div class="pets-card-child" id="pets-card-child-id">
+            <div class="pop-close-btn" id="pop-close-btn-id">x</div>
+            <div class="pets-pop-up" id="pets-pop-up-id"></div>
+          </div>
           <!-- <div class="our-firends-container"> -->
           <div class="our-firends-wrapper">
             <div class="our-firends-title">
@@ -56,140 +57,34 @@
                 are looking for a house
               </h2>
             </div>
-            <!-- <div class="our-firends-slider"> -->
-            <div class="our-firends-all">
-              <div
-                class="our-firends-block left_all"
-                id="katrine"
-                onmouseover="chbg('katrine_learn','#F1CDB3')"
-                onmouseout="chbg('katrine_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-katrine.png" alt="" />
-                <p class="our-firends-name">Katrine</p>
-                <button class="btn_learn_more" id="katrine_learn">
-                  Learn more
-                </button>
-              </div>
-
-              <div
-                class="our-firends-block inner_left"
-                id="jennifer"
-                onmouseover="chbg('jennifer_learn','#F1CDB3')"
-                onmouseout="chbg('jennifer_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-jennifer.png" alt="" />
-                <p class="our-firends-name">Jennifer</p>
-                <button class="btn_learn_more" id="jennifer_learn">
-                  Learn more
-                </button>
-              </div>
-
-              <div
-                class="our-firends-block inner_right"
-                id="woody"
-                onmouseover="chbg('woody_learn','#F1CDB3')"
-                onmouseout="chbg('woody_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-woody.png" alt="" />
-                <p class="our-firends-name">Woody</p>
-                <button class="btn_learn_more" id="woody_learn">
-                  Learn more
-                </button>
-              </div>
-
-              <div
-                class="our-firends-block right_all"
-                id="sophia"
-                onmouseover="chbg('sophia_learn','#F1CDB3')"
-                onmouseout="chbg('sophia_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-sophia.png" alt="" />
-                <p class="our-firends-name">Sophia</p>
-                <button class="btn_learn_more" id="sophia_learn">
-                  Learn more
-                </button>
-              </div>
-              <div
-                class="our-firends-block left_all"
-                id="timmy"
-                onmouseover="chbg('timmy_learn','#F1CDB3')"
-                onmouseout="chbg('timmy_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-timmy.png" alt="" />
-                <p class="our-firends-name">Timmy</p>
-                <button class="btn_learn_more" id="timmy_learn">
-                  Learn more
-                </button>
-              </div>
-              <div
-                class="our-firends-block inner_left"
-                id="charly"
-                onmouseover="chbg('charly_learn','#F1CDB3')"
-                onmouseout="chbg('charly_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-charly.png" alt="" />
-                <p class="our-firends-name">Charly</p>
-                <button class="btn_learn_more" id="charly_learn">
-                  Learn more
-                </button>
-              </div>
-              <div
-                class="our-firends-block inner_right"
-                id="scarlett"
-                onmouseover="chbg('scarlett_learn','#F1CDB3')"
-                onmouseout="chbg('scarlett_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-scarlett.png" alt="" />
-                <p class="our-firends-name">Scarlett</p>
-                <button class="btn_learn_more" id="scarlett_learn">
-                  Learn more
-                </button>
-              </div>
-              <div
-                class="our-firends-block right_all"
-                id="freddie"
-                onmouseover="chbg('freddie_learn','#F1CDB3')"
-                onmouseout="chbg('freddie_learn','#FFFFFF')"
-              >
-                <img src="../../assets/images/pets-freddie.png" alt="" />
-                <p class="our-firends-name">Freddie</p>
-                <button class="btn_learn_more" id="freddie_learn">
-                  Learn more
-                </button>
-              </div>
-            </div>
-            <!-- </div> -->
+            <div class="our-firends-slider" id="our-firends-slider-id"></div>
           </div>
           <div class="arrowSlider">
             <button
               type="button"
-              disabled
-              class="our-firends-arrow-active arrowPassive"
-            >
-              &lt;&lt;
-            </button>
+              class="double-left"
+              id="double-left-id"
+            ></button>
             <button
               type="button"
-              disabled
-              class="our-firends-arrow-active arrowPassive"
-            >
-              &lt;
-            </button>
-            <button type="button" class="our-firends-arrow-active arrowActive">
-              1
-            </button>
+              class="single-left"
+              id="single-left-id"
+            ></button>
             <button
               type="button"
-              class="our-firends-arrow-active arrowClickable"
-            >
-              &gt;
-            </button>
+              class="central-arrow-btn"
+              id="central-arrow-btn-id"
+            ></button>
             <button
               type="button"
-              class="our-firends-arrow-active arrowClickable"
-            >
-              &gt;&gt;
-            </button>
+              class="single-right"
+              id="single-right-id"
+            ></button>
+            <button
+              type="button"
+              class="double-right"
+              id="double-right-id"
+            ></button>
           </div>
         </section>
       </div>
