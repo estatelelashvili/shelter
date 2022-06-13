@@ -155,7 +155,7 @@ header{
 	display: flex;
 	flex-direction: column;
 }
-.burger-inner-content > p{
+.burger-inner-content > a{
 	margin-top: 20px;
 	font-family: Arial, 'Arial', serif;
     font-weight: 400;
@@ -164,9 +164,11 @@ header{
 	text-align: center;
     color: #545454;
 	cursor: pointer;
+	list-style: none;
+	text-decoration: none;
 }
 
-.burger-inner-content > p:nth-child(1){
+.burger-inner-content > a:nth-child(1){
 	text-decoration: underline 2px solid #F1CDB3;
 	text-underline-offset: 0.35rem;
 }
