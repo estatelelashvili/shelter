@@ -13,6 +13,36 @@ function chbg(target, color) {
   document.getElementById(target).style.backgroundColor = color;
 }
 
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    // document.body.style.backgroundColor = "yellow";
+    return true;
+  } else {
+    // document.body.style.backgroundColor = "pink";
+    return false;
+  }
+}
+let x = window.matchMedia("(max-width: 769px)");
+// myFunction(x);
+
+let bigMaC = document.getElementById("hamburger");
+let burgerSLider = document.getElementById("burger-slider-id");
+
+bigMaC.onclick = () => {
+  if (myFunction(x)) {
+    bigMaC.classList.toggle("burger-style");
+
+    if (burgerSLider.style.visibility === "visible") {
+      burgerSLider.style.cssText = `right: -320px; transition: 1s`;
+      burgerSLider.style.visibility = "hidden";
+    } else {
+      burgerSLider.style.cssText = `right: 0px; transition: 1s;`;
+      burgerSLider.style.visibility = "visible";
+    }
+  }
+};
+
 fetch("./petsCarusel.json")
   .then(function (response) {
     return response.json();

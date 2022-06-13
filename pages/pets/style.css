@@ -133,7 +133,43 @@ header{
 	margin-bottom: 7px;
 }
 
+/* BURGER MENU */
 
+.burger-style{
+	transform: rotate(90deg); transition: 1s;
+	z-index: 7;
+}
+.burger-slider{
+	width:320px;
+	height:375px;
+	background-color:red;
+	background-color:#f6f6f6;
+	position: absolute;
+	right: -320px;
+	z-index: 6;
+	visibility: hidden;
+}
+
+.burger-inner-content{
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+.burger-inner-content > p{
+	margin-top: 20px;
+	font-family: Arial, 'Arial', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+	text-align: center;
+    color: #545454;
+	cursor: pointer;
+}
+
+.burger-inner-content > p:nth-child(1){
+	text-decoration: underline 2px solid #F1CDB3;
+	text-underline-offset: 0.35rem;
+}
 
 nav{
 	display: flex;
@@ -469,6 +505,7 @@ main{
 	height: 52px;
 	/* transform: rotate(180deg); */
 	border: none;
+	cursor: pointer;
 }
 .single-left{
 	background: url('../../assets/images/affect-button-single-inactive-left.png');
@@ -477,6 +514,7 @@ main{
 	height: 52px;
 	/* transform: rotate(180deg); */
 	border: none;
+	cursor: pointer;
 }
 .central-arrow-btn{
 	background: url('../../assets/images/affect-button-center.png');
@@ -491,6 +529,7 @@ main{
 	width: 52px;
 	height: 52px;
 	border: none;
+	cursor: pointer;
 }
 .double-right{
 	background: url('../../assets/images/affect-button-double-active-right.png');
@@ -498,6 +537,7 @@ main{
 	width: 52px;
 	height: 52px;
 	border: none;
+	cursor: pointer;
 }
 
 
