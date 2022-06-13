@@ -1,3 +1,39 @@
+function myFunction(xs) {
+  if (xs.matches) {
+    // If media query matches
+    // document.body.style.backgroundColor = "yellow";
+    return true;
+  } else {
+    // document.body.style.backgroundColor = "pink";
+    return false;
+  }
+}
+let xs = window.matchMedia("(max-width: 769px)");
+
+let bigMaC = document.getElementById("hamburger");
+let burgerSLider = document.getElementById("burger-slider-id");
+
+bigMaC.onclick = () => {
+  if (myFunction(xs)) {
+    bigMaC.classList.toggle("burger-style");
+
+    if (burgerSLider.style.visibility === "visible") {
+      burgerSLider.style.cssText = `right: -320px; transition: 1s`;
+      burgerSLider.style.visibility = "hidden";
+    } else {
+      burgerSLider.style.cssText = `right: 0px; transition: 1s;`;
+      burgerSLider.style.visibility = "visible";
+    }
+  }
+};
+
+window.onresize = function () {
+  location.reload();
+  // myFunction(x);
+};
+
+var x = window.matchMedia("(max-width: 700px)");
+
 const hamburger = document.querySelector(".burger-menu");
 var clicked = false;
 const first = document.querySelector(".about_us_highLighted");
