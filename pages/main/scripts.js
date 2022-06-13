@@ -63,6 +63,10 @@ window.onresize = function () {
   location.reload();
 };
 
+document.getElementById("restKnowBtn").onclick = function () {
+  location.href = "../../pages/pets/index.html";
+};
+
 document.getElementById("makeFriendsBTN").onclick = function () {
   location.href = "#pets";
 };

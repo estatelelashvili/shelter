@@ -368,7 +368,7 @@ nav > ul > li > a:hover{
 	display: flex;
 	flex-direction: column;
 }
-.burger-inner-content > p{
+.burger-inner-content > a{
 	margin-top: 20px;
 	font-family: Arial, 'Arial', serif;
     font-weight: 400;
@@ -376,9 +376,11 @@ nav > ul > li > a:hover{
     line-height: 160%;
 	text-align: center;
     color: #cdcdcd;
+	list-style: none;
+	text-decoration: none;
 }
 
-.burger-inner-content > p:nth-child(1){
+.burger-inner-content > a:nth-child(1){
 	text-decoration: underline 2px solid #F1CDB3;
 	text-underline-offset: 0.35rem;
 }
